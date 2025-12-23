@@ -3,6 +3,11 @@ using Verse;
 
 namespace Lomzie.AutomaticWorkAssignment
 {
+    /// <summary>
+    /// Context object passed to all plugin methods during work assignment resolution.
+    /// Contains available pawns, current map, and work manager reference.
+    /// The _variables dictionary allows extensions to store custom data.
+    /// </summary>
     public class ResolveWorkRequest
     {
         public List<Pawn> Pawns;

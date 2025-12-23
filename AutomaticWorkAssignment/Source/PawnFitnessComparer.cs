@@ -9,6 +9,12 @@ using Verse;
 
 namespace Lomzie.AutomaticWorkAssignment
 {
+    /// <summary>
+    /// Cascading fitness comparison system for ranking pawns.
+    /// Iterates through fitness functions in order, using later functions to break ties.
+    /// Higher fitness values win (descending sort).
+    /// See CLAUDE.md "Fitness Comparison System" section for details.
+    /// </summary>
     public class PawnFitnessComparer : IComparer<Pawn>
     {
         private readonly List<IPawnFitness> _fitnessFunctions;

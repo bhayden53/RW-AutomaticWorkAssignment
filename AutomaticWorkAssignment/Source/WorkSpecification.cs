@@ -12,6 +12,12 @@ using Verse;
 
 namespace Lomzie.AutomaticWorkAssignment
 {
+    /// <summary>
+    /// Represents one assignable work role/job (e.g., "2 doctors", "3 haulers").
+    /// Contains fitness functions for ranking pawns, conditions for filtering eligibility,
+    /// post-processors for side effects, and work priorities to assign.
+    /// See CLAUDE.md for data model details and usage patterns.
+    /// </summary>
     public class WorkSpecification : IExposable, ILoadReferenceable
     {
         public string Name = "New Work"; // Label for UI.

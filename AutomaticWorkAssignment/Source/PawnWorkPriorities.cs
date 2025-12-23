@@ -6,6 +6,11 @@ using Verse;
 
 namespace Lomzie.AutomaticWorkAssignment
 {
+    /// <summary>
+    /// Ordered list of WorkTypeDefs to be assigned to a pawn.
+    /// Supports InterweavePriorities feature via GetShifted() method.
+    /// See CLAUDE.md for work priority resolution details.
+    /// </summary>
     public class PawnWorkPriorities : IExposable
     {
         public List<WorkTypeDef> OrderedPriorities;

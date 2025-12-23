@@ -5,6 +5,12 @@ using Verse;
 
 namespace Lomzie.AutomaticWorkAssignment
 {
+    /// <summary>
+    /// Abstract base class for all plugin settings.
+    /// Handles Def linkage and common serialization patterns.
+    /// Most plugin implementations (IPawnFitness, IPawnCondition, IPawnPostProcessor) inherit from this.
+    /// See CLAUDE.md "Base Class Pattern" section for usage examples.
+    /// </summary>
     public abstract class PawnSetting : IPawnSetting
     {
         public string Label => Def.LabelCap;

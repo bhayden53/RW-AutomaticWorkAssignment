@@ -11,6 +11,12 @@ using Verse;
 
 namespace Lomzie.AutomaticWorkAssignment
 {
+    /// <summary>
+    /// MapComponent that orchestrates automatic work assignment for a single map.
+    /// Manages WorkSpecifications, evaluates pawns against fitness functions and conditions,
+    /// and resolves work priorities. One instance per map, auto-ticked by RimWorld.
+    /// See CLAUDE.md for architecture details.
+    /// </summary>
     public class MapWorkManager : MapComponent, IExposable
     {
         public Map Map { get; private set; }
